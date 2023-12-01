@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock|Paper|Scissors</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="main2">
+        <img class="stars" src="assets/stars.png">
+        <img class="trophy" src="assets/trophy.png">
+
+        <h1>HURRAY</h1>
+        <h2>YOU WON THE GAME</h2>
+        <div class="decision playAgain">
+            <button><a href="index.html">PLAY AGAIN</a> </button>
+        </div>
+        <div class="buttons">
+            <button class="rule" onclick="showRules()">RULES</button>
+        </div>
+        <div class="rules">
+            <div class="rulesbox">
+                <p>Game Rules</p>
+                <ul>
+                    <li><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li>
+                    <li><span>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just
+                            “rock, paper, scissors.”</span></li>
+                    <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the
+                            time</span></li>
+                    <li><span>If both players lay down the same hand, each player lays down another hand </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="cross" onclick="closeRules()">X</div>
+        </div>
+    </div>
+
+    <script>
+        const showRules = () => {
+            document.querySelector(".rules").style.display = "flex";
+        }
+
+        const closeRules = () => {
+            document.querySelector(".rules").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
